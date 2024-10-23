@@ -1,0 +1,107 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: url(../images/neymar/neymar2.jpg)no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+nav li {
+    list-style-type: none;
+}
+
+.lien ul{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color: rgba(242, 235, 235, 0.69);
+    font-size: 15px;
+    
+}
+/* form{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+} */
+.rechercher{
+    margin-left: 400px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: "Gilda Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 6%;
+    color: rgba(242, 228, 37, 0.956);
+}
+
+.accueil section{
+    background-color:rgba(238, 237, 215, 0.533);
+}
+
+h2{
+    color:rgba(242, 228, 37, 0.974);
+    /* margin-bottom: 2%; */
+    margin-top: 2%;
+}
+
+.logo{
+    height: 37px;
+    margin-right: 20px;
+}
+
+main{
+    padding-bottom: 5em;
+}
+hr{
+    margin-top: 3em;
+}
+/* formulaire */
+
+main form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: rgba(228, 228, 228, 0.904);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+main form input, main form textarea, main form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* fin formulaire */
+
+footer{
+    background-color: rgba(253, 253, 253, 0.767);
+    text-align: center;
+    padding: 8px;
+    margin: 1em 0 0;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space;
+    }
+    li{
+        list-style-type: none;
+    }
+}
