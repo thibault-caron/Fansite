@@ -1,13 +1,17 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background: url(../images/neymar/neymar2.jpg)no-repeat;
-    background-position: center center;
-    background-size: cover;
+       background: url(../images/neymar/neymar2.jpg)no-repeat center center fixed;
+       background-size: 100%; 
 }
 nav li {
     list-style-type: none;
 }
 
+.background-photo{
+    background: url(../images/neymar/neymar2.jpg)no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 .lien ul{
     display:flex;
     justify-content:space-evenly;
@@ -88,8 +92,86 @@ button:hover {
     background-color: #45a049;
 }
 
-
 /* fin formulaire */
+
+
+
+/* debut de la galerie mosaïque */
+
+.mosaïque{
+    display: grid;
+    grid-template-columns: no-repeat(3, 1fr);
+    grid-template-rows: no-repeat(4, 1fr);
+    font-size: 2em;
+    text-align: center;
+    grid-gap: 5px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    max-height: 2000px;
+}
+
+.im{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.im1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-height: 100px;
+    /* max-height: 250px; */
+}
+.im2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-height: 100px;
+    /* max-height: 150px; */
+}
+
+.im5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    min-height: 100px;
+}
+
+.legend-photo {
+    /* font-family: Arial, sans-serif; */
+    font-family: Gilda Display, serif;
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+  }
+  
+
+/* fin de galerie mosaïque */
+
+/* début vidéos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 25%;
+    width: 90%;
+    padding-bottom: 56.25%; 
+    /* 16:9 ratio */
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 45%;
+}
+
+
+/* fin vidéos */
+
 
 footer{
     background-color: rgba(253, 253, 253, 0.767);
