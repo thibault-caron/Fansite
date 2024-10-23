@@ -2,6 +2,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
        background: url(../images/neymar/neymar2.jpg)no-repeat center center fixed;
        background-size: 100%; 
+      
 }
 nav li {
     list-style-type: none;
@@ -16,7 +17,7 @@ nav li {
     display:flex;
     justify-content:space-evenly;
     align-items:center;
-    background-color: rgba(242, 235, 235, 0.69);
+    background-color: rgba(242, 235, 235, 0.571);
     font-size: 15px;
     
 }
@@ -26,7 +27,9 @@ nav li {
     justify-content:flex-end;
 } */
 .rechercher{
-    margin-left: 400px;
+    margin-left: 600px;
+    margin-bottom: 0;
+    margin: 8px;
 }
 
 h1{
@@ -54,6 +57,16 @@ h3{
     color: rgba(238, 58, 58, 0.974);
     margin-top: 2px;
 }
+
+p{
+    background-color: rgba(241, 241, 235, 0.537);
+}
+
+.actu{
+    margin-left: 250px;
+
+}
+
 .logo{
     height: 37px;
     margin-right: 20px;
@@ -194,7 +207,7 @@ button:hover {
   width: 200px; /* Définir une largeur */
   /* display: block; */
   margin: 77px;
-  border: 3px solid rgba(242, 228, 37, 0.956);
+  border: 3px solid rgba(242, 61, 37, 0.956);
 
 }
 /* fin article */
