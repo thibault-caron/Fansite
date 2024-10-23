@@ -45,11 +45,15 @@ h1{
 }
 
 h2{
-    color:rgba(242, 228, 37, 0.974);
+    color:rgba(238, 229, 105, 0.974);
     /* margin-bottom: 2%; */
     margin-top: 2%;
 }
 
+h3{
+    color: rgba(238, 58, 58, 0.974);
+    margin-top: 2px;
+}
 .logo{
     height: 37px;
     margin-right: 20px;
@@ -152,16 +156,17 @@ button:hover {
 /* fin de galerie mosaïque */
 
 /* début vidéos */
+
 .video-container {
     display: flex;
     justify-content: center;
     position: relative;
     left: 25%;
     width: 90%;
-    padding-bottom: 56.25%; 
+    padding-bottom: 50%; 
     /* 16:9 ratio */
 }
-.video-container iframe {
+.iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -169,9 +174,18 @@ button:hover {
     height: 45%;
 }
 
-
 /* fin vidéos */
 
+/* article */
+.comeback{
+  height: 300px;
+  object-fit: cover;
+  width: 200px; /* Définir une largeur */
+  /* display: block; */
+  margin: 40px;
+
+}
+/* fin article */
 
 footer{
     background-color: rgba(253, 253, 253, 0.767);
