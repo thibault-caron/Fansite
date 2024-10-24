@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <img src="../images/neymar/neymar2.jpg" class="bg">
     <header>
         <!-- <nav class="lien">
             <ul>
@@ -27,23 +28,24 @@
         <!-- </nav> menu burger-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <section class="top-nav">
-          <div>
-            Accueil
-          </div>
+
+            <a href="../index.html">Accueil</a>
+
           <input id="menu-toggle" type="checkbox" />
           <label class='menu-button-container' for="menu-toggle">
           <div class='menu-button'></div>
           </label>
           <ul class="menu">
             <li id="blanc"><a href="#actualites">Actualité</a></li>
-            <li>Photos et vidéos</li>
-            <li>Réseaux sociaux</li>
-            <li>contact</li>
-            <li>Événements</li>
+            <!-- <li><a href="#accueil">Accueil</a></li> -->
+            <li><a href="#photo_vidéos">Photo et vidéos</a></li>
+            <li><a href="#evenements">Événements Palmares de Neymar</a></li>
+            <li><a href="./contact.html">contact</a></li>
           </ul>
+          <form class="rechercher">
+            <input type="text" id="fname" name="fsname" placeholder="rechercher">
+        </form> 
         </section>
-      
-      <h2>Resize window to collapse menu</h2>
        
 <!-- fin de nav menu burger -->
 
@@ -132,7 +134,7 @@
 
 
         <section> 
-            <h3>Palmares de Neymar</h3>
+            <h3 id="evenements">Palmares de Neymar</h3>
             <ol>
                 <li>Copa America - 2019</li>
                 <li>Coupe du Brésil - 2010</li>
