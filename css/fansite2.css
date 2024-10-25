@@ -233,10 +233,20 @@ p{
     font-family:  "Roboto", serif;
 }
 
-.actu{
-    margin-left: 250px;
+.comeback{
+  height: 300px;
+  object-fit: cover;
+  width: 200px; /* Définir une largeur */
+  /* display: block; */
+  margin: 50px;
+  border: 3px solid rgba(242, 61, 37, 0.956);
 
 }
+
+/* .actu{
+    margin-left: 250px;
+
+} */
 
 .logo{
     height: 37px;
@@ -289,15 +299,15 @@ button:hover {
 /* debut de la galerie mosaïque */
 
 .mosaïque{
-    display: grid;
-    grid-template-columns: no-repeat(3, 1fr);
-    grid-template-rows: no-repeat(4, 1fr);
+    display: flex;
+    /* grid-template-columns: no-repeat(3, 1fr);
+    grid-template-rows: no-repeat(4, 1fr); */
     font-size: 2em;
     text-align: center;
     grid-gap: 5px;
     margin-bottom: 150px;
     margin-top: 100px;
-    max-height: 2000px;
+    max-height: 1500px;
 }
 
 .im{
@@ -371,15 +381,7 @@ button:hover {
 /* fin vidéos */
 
 /* article */
-.comeback{
-  height: 300px;
-  object-fit: cover;
-  width: 200px; /* Définir une largeur */
-  /* display: block; */
-  margin: 77px;
-  border: 3px solid rgba(242, 61, 37, 0.956);
 
-}
 /* fin article */
 ol {
     background-image: url('fond_arriereplan.jpg');
@@ -429,9 +431,24 @@ footer{
 
 }
 
-
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+/* debut (responsive) media Q */ 
+@media screen and (max-width: 620px) {
+  .mosaïque{
+    display: block;
+    width: 100%;
+    max-height: 3000px;
+  }
+  .video-container{
+    display: none;
+  }
+  .actualites{
+
+  }
+}
+/* fin (responsive) de media Q */
