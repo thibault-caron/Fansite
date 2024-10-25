@@ -1,13 +1,12 @@
 body{
     font-family: 'Times New Roman', Times, serif;
        background: url(../images/neymar/neymar2.jpg)no-repeat center center fixed;
-       background-size: 100%; 
-      
+       background-size: 100%;       
 }
 
-.navbar .title:hover {
+/* .navbar .title:hover {
   color: #0066cc;
-}
+} */
 
 /* debut de nav burger */
 h2 {
@@ -231,6 +230,7 @@ h3{
 p{
     background-color: rgba(241, 241, 235, 0.57);
     font-size: 1.2em;
+    font-family:  "Roboto", serif;
 }
 
 .actu{
