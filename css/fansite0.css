@@ -1,11 +1,11 @@
 :root {
-  --primary-color: skyblue;
+  --primary-color: blue;
   --box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.8rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   --secondary: rgba(255, 255, 240, 0.85);
   --border-color: var(--primary-color);
   --border-radius: 0.25rem;
   --focus-color: rgba(187, 96, 96, 0.704);
-  --background-color: rgba(128, 128, 128, 0.659);;
+  --background-color: skyblue;
   --focus: 0 0 0 3px var(--focus-color);
 }
   
@@ -322,3 +322,40 @@ figure {
   .card-wide {grid-column: span 2 / auto;}
   .card-widest {grid-column: 1/-1;}
 }
+
+/* formulaire */
+
+/* debut politique */
+
+/* fin politique */
+
+main form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: rgba(228, 228, 228, 0.904);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+main form input, main form textarea, main form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+/* fin formulaire */
