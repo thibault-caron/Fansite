@@ -278,8 +278,6 @@ dl {display: grid;
   dt {grid-column-start: 1; text-align: right; margin: 0; font-weight:bold;}
   dd {grid-column-start: 2; text-align: justify; margin-left: 1vw;}
 }
-
-
 .tablet-only {
    p {
     margin-bottom: 0em;
@@ -292,8 +290,6 @@ dl {display: grid;
 .left-text {
   text-align: left;
 }
-
-
 @media (max-width: 900px) {
   .pc-only {
     display:none;
