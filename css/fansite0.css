@@ -171,6 +171,15 @@ main{
     box-shadow: var(--box-shadow);
   }
 }
+@media only screen and (max-width: 600px){
+  section {
+    margin: 3% 0.1%;
+    padding: 3% 0.3%;
+    input {
+      line-height: 2.5em;
+    }
+  }
+}
 
 h1, h2, h3, h4 {
   font-variant-caps: small-caps;
@@ -188,65 +197,6 @@ h1{
 }
 h2, h3{text-align: center;}
 h3{margin-bottom: 0.3em;}
-
-dl {display: grid;
-  grid-template-columns: max-content auto;
-
-  dt {grid-column-start: 1; text-align: right; margin: 0;}
-  dd {grid-column-start: 2; text-align: justify; margin-left: 1.5em;}
-}
-
-/* summary */
-
-summary {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-  color: var(--secondary);
-  border-radius: var(--border-radius);
-  background-color: var(--primary-color);
-  cursor: pointer;
-  h2, h3, h4 {
-    margin: 0;
-    padding-right: 0.8em;
-  }
-}
-
-summary::after {
-  content: '';
-  width: 0; 
-  height: 0; 
-  border-top: 10px solid var(--secondary);
-  border-inline: 7px solid transparent;
-  transition: 0.2s;
-}
-
-details[open] {
-  padding: 0 0.5em 0.2em;
-}
-details[open] > summary {
-  border-bottom: 2px solid var(--secondary);
-  border-radius: var(--border-radius);
-}
-
-details[open] > summary::after {
-  transform: rotate(-180deg);
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-details {
-  background: var(--secondary);
-  border-radius: var(--border-radius);
-  /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); */
-  box-shadow: var(--box-shadow);
-}
-
-/* fin summary */
 
 p {text-align: center;
   line-height: 1.2em;
@@ -329,14 +279,32 @@ figure {
 /* debut politique */
 
 /* fin politique */
-
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+::placeholder, label {
+  text-align: center;
+  line-height: 200%;
+}
 main form {
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
+  flex: 1 0;
+  max-width: 80vw;
+  padding: 5%;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   background-color: rgba(228, 228, 228, 0.904);
+    
+  @media (max-width: 600px) {
+    max-width: 95vw;
+    margin: 3% 1%;
+    padding: 5% 1%;
+    ::placeholder {
+      font-size: 2em;
+    }
+  }   
 }
 label {
   display: block;
